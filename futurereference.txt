@@ -1,0 +1,83 @@
+FUTURE REFERENCE OF ERRORS FOR PLUGR
+
+=============================================
+================ ERROR FIXED ================
+=============================================
+
+ERROR in ./src/client.js
+Module build failed: SyntaxError: Unexpected token (41:2)
+
+  39 | 
+  40 | const component = (
+> 41 |   <Router render={(props) =>
+     |   ^
+  42 |         <ReduxAsyncConnect {...props} helpers={{client}} filter={item => !item.deferred} />
+  43 |       } history={history}>
+  44 |     {getRoutes(store)}
+
+
+==> This error occurs bc file .babelrc is not in parent folder, also make sure  - npm install react-router -  is installed
+
+
+=============================================
+================ ERROR FIXED ================
+=============================================
+
+TURN ON AND OFF DEV TOOLS IS IN karma.config.js file
+
+__DEVTOOLS__: true  // <-------- DISABLE redux-devtools HERE
+
+
+==========================================
+================ API SET UP ==============
+==========================================
+
+These files have to be modified in order to make api calls to another server
+
+config.js
+server.js
+package.json
+helpers/apiClient.js 
+remove file api.js inside bin folder
+
+=============================================================
+================ INSTALLATION OF SLIDER SET UP ==============
+=============================================================
+
+https://github.com/akiran/react-slick
+
+$ npm install react-slick
+
+$ npm install slick-carousel
+
+
+===========================================================
+================ QUICK IMAGE RESIZING ON MAC ==============
+===========================================================
+
+
+$ sips -Z 640 *.jpg
+
+So what's happening? Well, "sips" is the command being used and -Z tells it to maintain the image's aspect ratio. "640" is the maximum height and width to be used and "*.jpg" instructs your computer to downsize every image ending in .jpg. It's really simple and shrinks your images very quickly. Just be sure to make a copy first if you want to preserve their larger size as well.
+
+
+======================================================
+================ PROBLEM WITH NODE_SASS ==============
+======================================================
+
+run:
+
+$ npm rebuild node-sass
+
+
+
+
+
+
+
+
+
+
+
+
+

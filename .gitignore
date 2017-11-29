@@ -1,0 +1,15 @@
+.idea/
+node_modules/
+dist/
+*.iml
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+.happypack
+webpack/dlls/*.json
+.scratch
+src/containers/.DS_Store
+src/components/.DS_Store
+src/redux/modules/.DS_Store
+package-lock.json
+.DS_Store
